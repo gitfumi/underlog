@@ -1,0 +1,78 @@
+@charset "utf-8"
+
+/* ---------------------------------------------------------
+ *	ヘッダー
+ *----------------------------------------------------------
+#header
+  position: fixed
+  top: 0
+  left: 0
+  width: $navWidth
+  height: 100%
+  // background-color: #000
+  padding: $sectionMargin/2
+  z-index: index($zIndex, header)
+  .headerInner
+    display: flex
+    align-items: center
+    justify-content: center
+    align-content: center
+    flex-wrap: wrap
+    height: 100%
+  .headerLogo
+    flex-basis: 100%
+  .headerMenu
+    flex-basis: 100%
+    li
+      margin-top: 10px
+      font-size: 1.2rem
+      a
+        &:hover,&.is-hover
+
+  +media(tablet)
+    padding: $sectionMargin/6 $sectionMargin/2
+    height: auto
+    width: 100%
+    justify-content: space-between
+    background-color: rgba(#fff, .5)
+    .headerMenu
+      flex-basis: auto
+    .headerLogo
+      max-width: $navWidth
+      margin-left: auto
+      margin-right: auto
+  +media(phablet)
+    padding: $sectionMargin/3 $sectionMargin/6
+    .headerLogo
+      max-width: $navWidth/2
+    .headerMenu
+      display: none
+
+/* ---------------------------------------------------------
+ *	アニメーション
+ *----------------------------------------------------------
+#header
+  .headerMenu
+    li
+      transition: all .3s
+      position: relative
+      padding-left: 20px
+      &:before
+        content: ''
+        position: absolute
+        top: 50%
+        left: 0
+        transform: translateY(-50%)
+        width: 10px
+        height: 1px
+        background-color: #ccc
+        transition: all .3s
+      &.is-inview
+        // text-align: right
+        letter-spacing: 1px
+        font-weight: 700
+        &:before
+          width: 10px
+          height: 10px
+          background-color: #000
+          // border-radius: 10px

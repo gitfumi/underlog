@@ -1,0 +1,72 @@
+[
+	{
+		"name": "ロイヤルオンラインショッピング",
+		"anchor": "ロイヤルオンラインショッピング",
+		"category": "ECサイト",
+		"comment": "ECサイト構築パッケージ「ECbeing」を使用しPC/SPのセパレートサイトを構築。内部のHTMLのバージョンがHTML 4.01と古く、かつ、パッケージのためレイアウトの自由度が少なかったのですが、JavascriptとCSSをうまく使い商品名・商品説明分などの表示位置の操作を行いデザイン通りに仕上げました。",
+		"position": "アシスタントディレクター、テクニカルディレクター、フロントエンジニア",
+		"charge": "コーディング / Javascriptプログラミング / パッケージへの実装",
+		"link": "https://www.shoproyal.jp",
+		"captureName": "shoproyal"
+	},
+	{
+		"name": "株式会社ブルーム",
+		"anchor": "株式会社ブルーム",
+		"category": "コーポレートサイト",
+		"comment": "恵比寿エリアを中心にレストラン・居酒屋を多店舗営業している飲食店の総合サイト。お知らせのブログ機能としてCMS（wordpress）を実装しています。",
+		"position": "アシスタントディレクター、フロントエンジニア",
+		"charge": "コーディング / Javascriptプログラミング",
+		"link": "https://www.bloom-co.jp/",
+		"captureName": "bloom"
+	},
+	{
+		"name": "東京柔道整復専門学校",
+		"anchor": "東京柔道整復専門学校",
+		"category": "学校法人サイト",
+		"comment": "柔道整復師という国家資格を取得をサポートする専門学校サイト。ブログはTOPスライド、オープンキャンパスとその他複数のブログをMovaleTypeで管理しています。デザイン・CMSのユーザーアビリティが高かったのか、他校とのつながりで案件の受注へとつながりました。",
+		"position": "テクニカルディレクター、フロントエンジニア",
+		"charge": "コーディング / Javascriptプログラミング / movable Type設計・構築",
+		"link": "https://www.kyobun.ac.jp",
+		"captureName": "jusen"
+	},
+	{
+		"name": "UCC コーヒーアカデミー",
+		"anchor": "UCC コーヒーアカデミー",
+		"category": "コーポレートサイト",
+		"comment": "UCCコーヒーアカデミーは日本初のコーヒー専門教育機関で「コーヒーをもっと楽しみたい」「将来、カフェ開業したい」という方向けのセミナーや講座を開催しているサイトになります。セミナーは大きく分けて体験セミナーと本格向けのセミナー。セミナー詳細ページがMovableType（※クラウドサービス）でできており、且つPHPと組み合わせて構成されています。",
+		"position": "テクニカルディレクター、フロントエンジニア",
+		"charge": "コーディング / Javascriptプログラミング",
+		"link": "https://www.ucc.co.jp/academy/",
+		"captureName": "uccacademy"
+	},
+	{
+		"name": "一般財団法人 日本educe食育総合研究所",
+		"anchor": "日本educe食育総合研究所",
+		"category": "プロモーションサイト",
+		"comment": "食育プログラムの開発と食育資格の普及を目的とした研究所サイト。サイトはシンプルにTOPと複数の読み物ページで構成されており、CMS（wordpress）は「お知らせ」ページで実装しています。",
+		"position": "ディレクター、フロントエンジニア",
+		"charge": "コーディング / Javascriptプログラミング / wordpress設計・構築",
+		"link": "http://www.educe-shokuiku.jp/",
+		"captureName": "educe"
+	},
+	{
+		"name": "ファームビレッジ湘南",
+		"anchor": "ファームビレッジ湘南",
+		"category": "ブランドサイト",
+		"comment": "湘南でオリーブ事業を行っている「ファームビレッジ湘南」の情報発信サイト。オリーブサイトでは、湘南の空気感を表現するために、エフェクトとしてフェード機能を使っています。",
+		"position": "フロントエンジニア",
+		"charge": "コーディング / Javascriptプログラミング",
+		"link": "https://www.farmvil-shonan.co.jp",
+		"captureName": "farmvil-shonan"
+	},
+	{
+		"name": "手土産特集2019｜シャディギフトモール",
+		"anchor": "シャディギフトモールの手土産",
+		"category": "ECサイト",
+		"comment": "シャディギフトモールサイト内の手土産コンテンツ。先方の要望として「他ページとの差別を図りたい」「ワクワク感を出したい」との要望がありました。その点について「次から次へと商品が出てくる」イメージを出すため、ディスプレイ領域に達するとJavascriptとCSSエフェクトで動きが付くよう対応しました。",
+		"position": "ディレクター、フロントエンジニア",
+		"charge": "コーディング / Javascriptプログラミング",
+		"link": "https://shaddy.jp/temiyage/",
+		"captureName": "shaddy"
+	}
+]

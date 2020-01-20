@@ -1,0 +1,18 @@
+{
+  "/": {
+    "siteName": "すとっくなぅ（STOCKNOW）",
+    "pageName": "HOME",
+    "pagetype": "home",
+    "title":"タイトルタイトルタイトルタイトルタイトルタイトルタイトル",
+    "description":"ディスクリプションディスクリプションディスクリプションディスクリプションディスクリプションディスクリプション",
+    "twitterId":"",
+    "ogImage":"https://stocknow.info/img/cmn/pic_ogp.jpg"
+  },
+  "/_error/404.html": {
+    "pagetype": "normal",
+    "pageName": "お探しのページは見つかりませんでした。",
+    "title": "お探しのページは見つかりませんでした。｜タイトルタイトルタイトルタイトルタイトルタイトルタイトル",
+    "description": "ディスクリプションディスクリプションディスクリプションディスクリプションディスクリプションディスクリプション",
+    "ogImage": ""
+  }
+}

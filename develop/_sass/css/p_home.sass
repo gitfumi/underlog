@@ -1,0 +1,134 @@
+@charset "utf-8"
+
+@import "../_base/variable"
+@import "../_tool/mixin/**"
+// @import "../_tool/function"
+
+/* ---------------------------------------------------------
+ *	記事一覧
+ *----------------------------------------------------------
+#p-home #main
+  .matterList
+    >section
+      counter-increment: cnt
+      position: relative
+      margin: $sectionMargin*2 0
+      &::before
+        content: counter(cnt)
+        position: absolute
+        top: 0
+        right: 0
+        font-size: 10rem
+        font-family: $fontFamilyBungee
+        color: #eee
+        line-height: 1.0
+      & + section
+        // margin-top: $sectionMargin
+  .matterItem
+    display: flex
+    align-items: flex-start
+    flex-wrap: wrap
+    margin-top: $sectionMargin/3
+  .matterCont
+    flex-basis: calc(35% - 60px)
+    margin-right: $sectionMargin
+    line-height: 2.0
+  .matterName
+    font-size: 1.8rem
+    font-weight: 700
+    a
+      padding-right: 2.4rem
+      display: inline-block
+      +iconFontAbsolute(before , link-ext, 50%, 0, 50%, null, 1.8rem, #000)
+      &::after
+        content: ''
+        bottom: 0
+        left: 0
+        position: absolute
+        display: block
+        width: 100%
+        height: 1px
+        background-color: #000
+        opacity: 0
+        transform: translateY(10px)
+        transition: all .3s
+      &:hover,&.is-hover
+        &::after
+          opacity: 1
+          transform: translateY(0)
+  .matterPosition
+    margin-top: $sectionMargin/3
+  .matterPositionTtl
+    font-weight: 700
+    font-size: 1.6rem
+  .matterCategory
+    margin-top: 5px
+    font-size: 1.2rem
+    font-weight: bold
+    color: #ccc
+    &::before
+      content: '[ '
+    &::after
+      content: ' ]'
+  .matterPositionTxt
+    font-weight: 700
+    color: #666
+  .matterDevice
+    flex-basis: 65%
+    display: flex
+    align-items: flex-end
+    justify-content: space-between
+    li
+      &:nth-of-type(1)
+        flex-basis: 60%
+      &:nth-of-type(2)
+        flex-basis: 20%
+      &:nth-of-type(3)
+        flex-basis: 10%
+  +media(minipc)
+    .matterCont
+      margin-top: $sectionMargin/2
+      flex-basis: 100%
+      order: 2
+      margin-right: 0
+    .matterDevice
+      order: 1
+      flex-basis: 100%
+  +media(phablet)
+    .matterList
+      >section
+        &::before
+          font-size: 5rem
+
+/* ---------------------------------------------------------
+ *	アニメーション
+ *----------------------------------------------------------
+#p-home #main
+  .matterCont,.matterDevice
+    opacity: 0
+    transform: translateX(10%)
+  .matterCont
+    transition: all .5s .2s
+  .matterDevice
+    transition: all .5s .4s
+  .matterList
+    >section
+      opacity: .2
+      transition: all .5s
+      transform: translateX(10%)
+      &.is-inview
+        opacity: 1
+        transform: translateX(0)
+        .matterCont,.matterDevice
+          opacity: 1
+          transform: translateX(0)
+  +media(phablet)
+    .matterCont,.matterDevice
+      transform: translate(0,10%)
+    .matterList
+      >section
+        transform: translate(0,10%)
+        &.is-inview
+          transform: translate(0,0)
+          .matterCont,.matterDevice
+            transform: translate(0,0)

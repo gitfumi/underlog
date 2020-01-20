@@ -1,0 +1,41 @@
+extends /_pug/_inc/_layout
+
+//-
+	---------------------------------------------------------
+	ページ固有の変数を定義
+	---------------------------------------------------------
+append setVar
+	- layout = 'home'
+	- pageUrl = '/'
+	- dirArray = createDirArray(pageUrl)
+	- bodyAttributes.id = 'p-home'
+
+//-
+	---------------------------------------------------------
+	ページ固有のCSSを読み込み
+	---------------------------------------------------------
+append css
+	link(rel="stylesheet" href="/css/p_home.css")
+
+//-
+	---------------------------------------------------------
+	コンテンツ
+	---------------------------------------------------------
+block main
+
+	div.matterList
+		each val, index in matterlist
+			section.js-inView(id=val.captureName)
+				h2.matterName: a(href=val.link target="_blank") #{val.name}
+				p.matterCategory #{val.category}
+				.matterItem
+					.matterCont
+						p.matterComment #{val.comment}
+						.matterPosition
+							h3.matterPositionTtl 担当業務
+							p.matterPositionTxt #{val.position}
+							p.matterPositionCharge #{val.charge}
+					ul.matterDevice
+						li: img(src="/img/pic_" + val.captureName + "_iMac.png")
+						li: img(src="/img/pic_" + val.captureName + "_iPad.png")
+						li: img(src="/img/pic_" + val.captureName + "_iPhone.png")

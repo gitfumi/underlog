@@ -1,0 +1,32 @@
+@charset "utf-8"
+
+/* ---------------------------------------------------------
+ *	フッター
+ *----------------------------------------------------------
+#footer
+  padding: 10px
+  .footer_totop
+    position: fixed
+    bottom: 0
+    right: 0
+    // z-index: 1
+    a
+      display: block
+      width: 40px
+      height: 40px
+      background-color: #000
+      +icoArrow(before, 50%, 50%, 50%, 50%, 1.0rem, 2px, #fff, -45deg)
+      &::before
+        transition: all .3s
+      span
+        font-size: 0
+      &:hover,&.is-hover
+        &::before
+          margin-top: -5px
+  .footer_copy
+    margin-right: 40px
+    text-align: right
+    font-size: 1.2rem
+    color: #000
+  +media(tablet)
+  +media(phablet)

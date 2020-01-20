@@ -1,0 +1,234 @@
+@charset "UTF-8";
+/* ---------------------------------------------------------
+ *	記事一覧
+ *---------------------------------------------------------- */
+#p-home #main .matterList > section {
+  counter-increment: cnt;
+  position: relative;
+  margin: 120px 0;
+}
+
+#p-home #main .matterList > section::before {
+  content: counter(cnt);
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 10rem;
+  font-family: "Bungee", cursive;
+  color: #eee;
+  line-height: 1.0;
+}
+
+#p-home #main .matterItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+#p-home #main .matterCont {
+  -ms-flex-preferred-size: calc(35% - 60px);
+      flex-basis: calc(35% - 60px);
+  margin-right: 60px;
+  line-height: 2.0;
+}
+
+#p-home #main .matterName {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+#p-home #main .matterName a {
+  padding-right: 2.4rem;
+  display: inline-block;
+  position: relative;
+}
+
+#p-home #main .matterName a:before {
+  content: "\f08e";
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
+  color: #000;
+  font-family: 'icons';
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+  line-height: 1;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-transform: none;
+  text-decoration: none;
+}
+
+#p-home #main .matterName a::after {
+  content: '';
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  opacity: 0;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+#p-home #main .matterName a:hover::after, #p-home #main .matterName a.is-hover::after {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+#p-home #main .matterPosition {
+  margin-top: 20px;
+}
+
+#p-home #main .matterPositionTtl {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+#p-home #main .matterCategory {
+  margin-top: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ccc;
+}
+
+#p-home #main .matterCategory::before {
+  content: '[ ';
+}
+
+#p-home #main .matterCategory::after {
+  content: ' ]';
+}
+
+#p-home #main .matterPositionTxt {
+  font-weight: 700;
+  color: #666;
+}
+
+#p-home #main .matterDevice {
+  -ms-flex-preferred-size: 65%;
+      flex-basis: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#p-home #main .matterDevice li:nth-of-type(1) {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+
+#p-home #main .matterDevice li:nth-of-type(2) {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+}
+
+#p-home #main .matterDevice li:nth-of-type(3) {
+  -ms-flex-preferred-size: 10%;
+      flex-basis: 10%;
+}
+
+@media only screen and (max-width: 1100px) {
+  #p-home #main .matterCont {
+    margin-top: 30px;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-right: 0;
+  }
+  #p-home #main .matterDevice {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+
+@media only screen and (max-width: 668px) {
+  #p-home #main .matterList > section::before {
+    font-size: 5rem;
+  }
+}
+
+/* ---------------------------------------------------------
+ *	アニメーション
+ *---------------------------------------------------------- */
+#p-home #main .matterCont, #p-home #main .matterDevice {
+  opacity: 0;
+  -webkit-transform: translateX(10%);
+          transform: translateX(10%);
+}
+
+#p-home #main .matterCont {
+  -webkit-transition: all .5s .2s;
+  transition: all .5s .2s;
+}
+
+#p-home #main .matterDevice {
+  -webkit-transition: all .5s .4s;
+  transition: all .5s .4s;
+}
+
+#p-home #main .matterList > section {
+  opacity: .2;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -webkit-transform: translateX(10%);
+          transform: translateX(10%);
+}
+
+#p-home #main .matterList > section.is-inview {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+#p-home #main .matterList > section.is-inview .matterCont, #p-home #main .matterList > section.is-inview .matterDevice {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+@media only screen and (max-width: 668px) {
+  #p-home #main .matterCont, #p-home #main .matterDevice {
+    -webkit-transform: translate(0, 10%);
+            transform: translate(0, 10%);
+  }
+  #p-home #main .matterList > section {
+    -webkit-transform: translate(0, 10%);
+            transform: translate(0, 10%);
+  }
+  #p-home #main .matterList > section.is-inview {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  #p-home #main .matterList > section.is-inview .matterCont, #p-home #main .matterList > section.is-inview .matterDevice {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}

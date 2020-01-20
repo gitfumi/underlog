@@ -1,0 +1,28 @@
+@charset "utf-8"
+
+/* ---------------------------------------------------------
+ *	大枠
+ *----------------------------------------------------------
+#contents
+  min-height: 100%
+  margin-left: $navWidth
+  transition: all .5s
+  overflow: hidden
+  z-index: index($zIndex, contents)
+  +media(tablet)
+    margin-left: 0
+    margin-top: 223px - $sectionMargin*2
+    &.is-show
+      opacity: 0.5
+  +media(phablet)
+    margin-top: 113px - $sectionMargin*2
+/* ---------------------------------------------------------
+ *	メイン枠
+ *----------------------------------------------------------
+#main
+  flex-basis: calc(100% - #{$navWidth})
+  padding: $sectionMargin $sectionMargin $sectionMargin $sectionMargin*2
+  +media(minipc)
+    padding: $sectionMargin/2
+  +media(phablet)
+    padding: $sectionMargin/6
