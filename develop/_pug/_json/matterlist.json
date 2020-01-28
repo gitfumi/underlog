@@ -10,22 +10,12 @@
 		"captureName": "shoproyal"
 	},
 	{
-		"name": "株式会社ブルーム",
-		"anchor": "株式会社ブルーム",
-		"category": "コーポレートサイト",
-		"comment": "恵比寿エリアを中心にレストラン・居酒屋を多店舗営業している飲食店の総合サイト。お知らせのブログ機能としてCMS（wordpress）を実装しています。",
-		"position": "アシスタントディレクター、フロントエンジニア",
-		"charge": "コーディング / Javascriptプログラミング",
-		"link": "https://www.bloom-co.jp/",
-		"captureName": "bloom"
-	},
-	{
 		"name": "東京柔道整復専門学校",
 		"anchor": "東京柔道整復専門学校",
 		"category": "学校法人サイト",
 		"comment": "柔道整復師という国家資格を取得をサポートする専門学校サイト。ブログはTOPスライド、オープンキャンパスとその他複数のブログをMovaleTypeで管理しています。デザイン・CMSのユーザーアビリティが高かったのか、他校とのつながりで案件の受注へとつながりました。",
 		"position": "テクニカルディレクター、フロントエンジニア",
-		"charge": "コーディング / Javascriptプログラミング / movable Type設計・構築",
+		"charge": "デザイン（モーション） / コーディング / Javascriptプログラミング / movable Type設計・構築",
 		"link": "https://www.kyobun.ac.jp",
 		"captureName": "jusen"
 	},
@@ -40,22 +30,12 @@
 		"captureName": "uccacademy"
 	},
 	{
-		"name": "一般財団法人 日本educe食育総合研究所",
-		"anchor": "日本educe食育総合研究所",
-		"category": "プロモーションサイト",
-		"comment": "食育プログラムの開発と食育資格の普及を目的とした研究所サイト。サイトはシンプルにTOPと複数の読み物ページで構成されており、CMS（wordpress）は「お知らせ」ページで実装しています。",
-		"position": "ディレクター、フロントエンジニア",
-		"charge": "コーディング / Javascriptプログラミング / wordpress設計・構築",
-		"link": "http://www.educe-shokuiku.jp/",
-		"captureName": "educe"
-	},
-	{
 		"name": "ファームビレッジ湘南",
 		"anchor": "ファームビレッジ湘南",
 		"category": "ブランドサイト",
 		"comment": "湘南でオリーブ事業を行っている「ファームビレッジ湘南」の情報発信サイト。オリーブサイトでは、湘南の空気感を表現するために、エフェクトとしてフェード機能を使っています。",
 		"position": "フロントエンジニア",
-		"charge": "コーディング / Javascriptプログラミング",
+		"charge": "デザイン（モーション） / コーディング / Javascriptプログラミング",
 		"link": "https://www.farmvil-shonan.co.jp",
 		"captureName": "farmvil-shonan"
 	},
@@ -65,8 +45,28 @@
 		"category": "ECサイト",
 		"comment": "シャディギフトモールサイト内の手土産コンテンツ。先方の要望として「他ページとの差別を図りたい」「ワクワク感を出したい」との要望がありました。その点について「次から次へと商品が出てくる」イメージを出すため、ディスプレイ領域に達するとJavascriptとCSSエフェクトで動きが付くよう対応しました。",
 		"position": "ディレクター、フロントエンジニア",
-		"charge": "コーディング / Javascriptプログラミング",
+		"charge": "デザイン（モーション） / コーディング / Javascriptプログラミング",
 		"link": "https://shaddy.jp/temiyage/",
 		"captureName": "shaddy"
+	},
+	{
+		"name": "株式会社クラックス",
+		"anchor": "株式会社クラックス",
+		"category": "コーポレートサイト",
+		"comment": "自社のコーポレートをワイヤーフレーム～デザイン～コーディングまで、ほぼ1人で構築しました。",
+		"position": "ディレクター、デザイナー、フロントエンジニア",
+		"charge": "デザイン / デザイン（モーション） / コーディング / Javascriptプログラミング",
+		"link": "https://crux-lab.co.jp/",
+		"captureName": "crux"
+	},
+	{
+		"name": "STOCKNOW 手土産情報サイト",
+		"anchor": "STOCKNOW 手土産情報サイト",
+		"category": "アフェリエイトサイト",
+		"comment": "「おしゃな手土産」と「ファッション」の情報発信サイト。ターゲット層は20代〜40代の男女とし、文字・画像の大きさに強弱をつけスタリッシュ感を表現しました。",
+		"position": "ディレクター、テクニカルディレクター、デザイナー、フロントエンジニア",
+		"charge": "デザイン / コーディング / Javascriptプログラミング /movable Type設計・構築",
+		"link": "https://stocknow.info/",
+		"captureName": "stocknow"
 	}
 ]

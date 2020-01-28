@@ -18,13 +18,13 @@ module.exports = {
 		console.log(config.activeFile.path);
 
 		let path = config.root.src + config.sass.targetFile,
-				option;
+				option = { sourcemaps: true };
 
 		// /_sass/css/の個別ファイルの場合ビルド対象反映を変更。
 		if (config.activeFile.path.match(/_sass\\css/)){
 			if (!config.activeFile.path.match(/\\_entry\\/)){
 				path = config.activeFile.path;
-				option = {base: './develop/_sass'};
+				option = {base: './develop/_sass', sourcemaps: true};
 				console.log('change!!!!!!!!!!');
 			}
 		}
@@ -52,7 +52,7 @@ module.exports = {
 				})
 			]
 		))
-		.pipe($.gulp.dest(config.root.src));
+		.pipe($.gulp.dest(config.root.src, { sourcemaps: true }));
 	},
 
 	/* --------------------
@@ -60,7 +60,7 @@ module.exports = {
 	----------------------*/
 	taskSassAll: () => {
 		return $.gulp
-		.src(config.root.src + config.sass.targetFile)
+		.src(config.root.src + config.sass.targetFile, { sourcemaps: true })
 		// エラーが起こっても停止させない
 		.pipe($.plumber({
 			errorHandler: $.notify.onError(config.plumber.errorMessage)
@@ -79,6 +79,6 @@ module.exports = {
 				})
 			]
 		))
-		.pipe($.gulp.dest(config.root.src));
+		.pipe($.gulp.dest(config.root.src, { sourcemaps: true }));
 	}
 }
